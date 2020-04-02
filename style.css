@@ -1,313 +1,132 @@
-body{
-    font-family: georgia, times, serif;
-    color: black;
-    font-size: 1.2rem;
-    line-height: 1.6em;
-    margin: 0;
-    background:;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:center;
-    background-image: url(blanco4.jpg.jpg);
-    background-size: 90%;
+@@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  color: #555;
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
-.slider{
-    margin-top: 79px;
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
-}
-.slider ul{
-    padding: 0;
-    margin-top: 79;
-    margin-left: -90;
-    display: flex;
-    width: 400%;
-    animation: cambio 20s infinite;
-    animation-direction: alternate;
-}
-.slider li{
-    list-style: none;
-    width: 100%;
-    
-}
-.slider img{
-    width: 100%;
-}
-@keyframes cambio {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+#header {
+  background-color: darkcyan;
+  height: 150px;
+  line-height: 150px;
 }
 
-h1{
-    font-size: 2rem;
-    line-height: 2em;
-}
-p{
-    margin-bottom: 1.6em;
-}
-.container{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
-}
-.header{
-    background-color: #333;
-    color: darkcyan;
-    padding: 1rem 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-.header a{
-    color: white;
-    text-decoration: none;
-    border-bottom:
-    margin-right: 
+#header-tittle {
+  display: block;
+  float: left;
+
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.logo-nav-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-bottom: none; 
-}
-.logo{
-    letter-spacing: 18px;
-    font-size: 1em;
-    border-bottom: 3px solid darkcyan;
-    color: darkcyan;
-    }
-.menu-icon{
-    display: none;
-}
-.navigation ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-}
-.navigation ul li{
-    display: inline-block;
-}
-.navigation ul li a{
-    display: block;
-    padding: 0.5rem 1rem;
-    transition: all 0.4s linear; 
-    border-radius: 5px;
-}
-.navigation ul li a:hover{
-    background-color: #4a4a4a;
-}
-.main{
-    padding: 7rem;
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 0;
 }
 
-@media only screen and (max-width: 767px){
-
-    .menu-icon{
-        display: block;
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-    }
-    .navigation{
-        width: 100%;
-        margin-top: 1rem;
-    }
-    .navigation ul{
-        display: none;
-    }
-    .navigation ul.show{
-        display: block;
-    }
-.navigation ul li{
-    display: block;
-}
-.navigation ul li a{
-    display: block;
-    padding: 0.5rem 0;
-    transition: all 0.4s linear; 
-    border-radius: px;
-}
-.navigation ul li a:hover{
-    background-color: #4a4a4a;
-}  
-}
-.footer{
-    background-color: #f2f2f2;
-    padding: 4rem 0;
-    text-align: center;
-    margin-top: 6rem;    
+#header-nav li {
+  display: inline;
+  padding-left: 20px;
 }
 
-.container .form .form-header .form-title{
-    font-weight: normal;
-    font-family: georgia;
-    color: white;
-    text-align: center;
-    font-size: 25;
-    margin: 1
-    }
+#header a {
+  color: white;
+  text-decoration: none;
 
-.container .form{
-    background: rgba(0,0,0,.6);
-    width: 100%;
-    max-width: 650px;
-    height: 270px;
-    margin-top:50px;
-    padding: 5px 90px;
-    padding-bottom: 180px;
-    border-radius: 20px;
-    align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em
 }
 
-.container .form .form-label{
-    display: block;
-    color:darkgrey; 
-    font-family: roboto;
-    }
-
-.container .form .form-input, .form-textarea{
-    background: rgba(0,0,0,.);
-    border: none;
-    outline: none;
-    border-bottom: 5px solid cadetblue;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 5px; 
-    border-radius: 10px;
-    font-size: 13px;
-    color: black;
-    font-family: roboto;
-    }
-
-.container .form .form-textarea{
-    resize: vertical;
-    max-height: 150px;
-    min-height: 50px;
-    margin-bottom: 20px;
+#header a:hover {
+  color: #222;
 }
 
-.container .form .btn-submit{
-    width: 100%;
-    font-family: roboto;
-    outline: none;
-    background-color: darkcyan;
-    font-size: 16px;
-    border: none;
-    color: white;
-    padding: 15px 0;
-    cursor: pointer;
-    border-radius: 20px;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.container .form .btn-submit:hover{
-    background-color: cadetblue;
+#footer {
+  background-color: #2f2f2f;
+  padding: 50px 0;
 }
 
-
-.container2 .form2 .form-header .form-title{
-    font-weight: normal;
-    font-family: georgia;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 25;
-    margin: 1
-    }
-
-.container2 .form2{
-    background: rgba(0,0,0,.4);
-    min-width: 200px;
-    max-width: 780px;
-    height: 270px;
-    margin-top:0px;
-    padding: 5px 90px;
-    padding-bottom: 170px;
-    border-radius: 20px;
-    align-self: center;
-    padding-bottom: 270
+.column {
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.container2 .form2 .form-label{
-    display: block;
-    color: whitesmoke; 
-    font-family: roboto;
-    }
-
-.container2 .form2 .form-input2{
-    background: rgba(0,0,0,.);
-    border: ;
-    outline: none;
-    border-bottom: 5px solid cadetblue;
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 5px; 
-    border-radius: 10px;
-    font-size: 13px;
-    color: black;
-    font-family: roboto;
-    }
-
-.container2 .form2 .btn-submit{
-    width: 100%;
-    font-family: roboto;
-    outline: none;
-    background-color: darkcyan;
-    font-size: 16px;
-    border: none;
-    color: white;
-    padding: 15px 0;
-    cursor: pointer;
-    border-radius: 20px;
+#footer h4 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-p{
-    text-align: center;
-    font-size: 15px;
-}
-.container2 .form2 .btn-submit:hover{
-    background-color: cadetblue;
+#footer p {
+  color:white;
 }
 
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
 
+a:hover {
+  color: #F6A623;
+}
 
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
 
+.post-author img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
 
+.post-author span {
+  margin-left: 16px;
+}
 
+.post-date {
+  color: #D2D2D2;
 
+  font-size: 14px;
+  font-weight: bold;
 
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 
+h1, h2, h3, h4 {
+  color: #333;
+}
 
+p {
+  line-height: 1.5;
+}
 
+.post, .about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
 
+.about {
+  text-align:
+}
 
+.post-author img, .about-author img {
+  border-radius: 50%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.post-container:nth-child(even) {
+  background-color: #f2f2f2;
+}
